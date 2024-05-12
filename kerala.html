@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kerala Tour Booking</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    #booking-details {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    #destinations {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Kerala Tour Booking</h1>
+</header>
+<div id="booking-details">
+    <h2>Booking Details</h2>
+    <p>Hotel: Taj Malabar</p>
+    <p>Check-in: 12th May 2024</p>
+    <p>Check-out: 18th May 2024</p>
+    <div id="destinations">
+        <h3>Destinations</h3>
+        <ul>
+            <li>Spice Gardens</li>
+            <li>Waterfall</li>
+        </ul>
+    </div>
+</div>
+<script>
+    // Example JavaScript code (optional)
+    // You can add more functionality as needed
+    // For example, you can add a countdown timer for the check-out date
+    // or a booking confirmation pop-up
+    
+    // Countdown timer for check-out date
+    const checkOutDate = new Date('May 18, 2024 00:00:00').getTime();
+    const countdown = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = checkOutDate - now;
+        
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById('countdown').innerHTML = 'Booking Expired';
+        }
+    }, 1000);
+</script>
+</body>
+</html>

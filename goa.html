@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goa Tour Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    .hotel-details, .beach-info {
+      margin-bottom: 20px;
+    }
+    .hotel-details img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .beach-info img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Goa Tour Booking</h1>
+    <div class="hotel-details">
+      <h2>Hotel Details</h2>
+      <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//hotelier-images/cb/f2/2dacfa15b7aee1bf9f858ffb992bdae73aefff0cb3664fe34df8ebe16bc2.jpeg" alt="Hotel Image">
+      <p>Name: Tivago Resort</p>
+      <p>Location: Calangute Beach, Goa</p>
+      <p>Facilities: Swimming pool, Spa, Restaurant</p>
+      <p>Price: $200 per night</p>
+    </div>
+    <div class="beach-info">
+      <h2>Beach Information</h2>
+      <img src="https://static.toiimg.com/thumb/msid-79792907,width-748,height-499,resizemode=4,imgsize-159389/.jpg" alt="Beach Image">
+      <p>Calangute Beach is the largest beach in North Goa</p>
+      <p>Activities: Water sports, Sunbathing, Shopping at beach shacks</p>
+      <p>Nearby Attractions: Baga Beach, Anjuna Flea Market</p>
+    </div>
+    <button onclick="confirmBooking()">Confirm Booking</button>
+  </div>
+
+  <script>
+    function confirmBooking() {
+      alert("Your tour to Goa is booked! Have a great time!");
+    }
+  </script>
+</body>
+</html>

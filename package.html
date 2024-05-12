@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Packages</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 30px;
+    }
+    .packages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .package {
+        width: calc(33.33% - 20px);
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    .package img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .package .details {
+        padding: 15px;
+        background-color: #f9f9f9;
+    }
+    .package h3 {
+        margin-top: 0;
+        color: #333;
+    }
+    .package p {
+        margin: 10px 0;
+        color: #666;
+    }
+    .btn {
+        display: inline-block;
+        padding: 8px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Featured Packages for International Tours</h2>
+    <div class="packages">
+        <div class="package">
+            <img src="https://www.state.gov/wp-content/uploads/2023/07/shutterstock_667548661v2.jpg" alt="Destination 1">
+            <div class="details">
+                <h3>Package 1</h3>
+                <p>Paris</p>
+                <p>Price: $1000</p>
+                <a href="paris.html" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="package">
+            <img src="https://www.shutterstock.com/image-photo/metro-railway-among-glass-skyscrapers-600nw-2185205475.jpg" alt="Destination 2">
+            <div class="details">
+                <h3>Package 2</h3>
+                <p>Dubai</p>
+                <p>Price: $1200</p>
+                <a href="dubai.html" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="package">
+            <img src="https://i.natgeofe.com/n/075e4f53-f271-4f7a-855a-5eccdba43587/01_Europe.jpg" alt="Destination 3">
+            <div class="details">
+                <h3>Package 3</h3>
+                <p>Europe</p>
+                <p>Price: $1500</p>
+                <a href="rome.html" class="btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
